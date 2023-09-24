@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to left top, #051937, #152442, #24304e, #313c59, #3f4965);
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu {
+  background-image: linear-gradient(to right top, #f9f9f9, #f9f9f9, #fafafa, #fafafa, #fafafa);
+  height: 350px;
+  width: 500px;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-contain {
+  height: 350px;
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-list {
+  margin: 1rem;
+}
+
+.change {
+  color: #91071e;
+}
+
+li {
+  margin: 8px;
+  letter-spacing: 1px;
+  list-style-type: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.menu-list::before {
+  float: right;
+  shape-outside: circle(40% at 100% 50%);
+}
+
+.time {
+  background-image: linear-gradient(to right top, #121317, #111216, #101215, #101113, #0f1012);
+  height: 350px;
+  width: 500px;
+}
+
+.screen {
+  background-color: #030a16;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px;
+  border-bottom: 2px solid white;
+}
+
+span {
+  font-size: 1rem;
+  color: rgb(157, 157, 21);
+}
+
+.nob-container {
+  background-image: linear-gradient(to right top, #15596c, #296f8d, #047643, #305b91, #65167f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  height: 60%;
+  border-radius: 50%;
+  /* border: outset 10px; */
+}
+
+.nobebox {
+  background-image: linear-gradient(to right top, #121317, #111216, #101215, #101113, #0f1012);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+}
+
+.nobe {
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  color: #24304e;
+}
+
+.nobe:active {
+  scale: 1.1;
+}
+
+.nobe.circle {
+  transition: transform 0.5s ease-in-out;
+  animation: rotate linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
